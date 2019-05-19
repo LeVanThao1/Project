@@ -1,0 +1,792 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+.container {
+  width: auto;
+  margin: auto; }
+
+header {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  /* Style cho thẻ link a của menu*/
+  /* Style cho thẻ link a khi hover*/
+  /* Style cho thẻ icon close, ẩn khi ở giao diện desktop*/
+  /* Style cho thẻ icon bars, ẩn khi ở giao diện desktop*/ }
+  header nav {
+    margin: 0;
+    padding: 0;
+    padding-left: 20%;
+    overflow: hidden;
+    font-size: 18px; }
+  header nav .side-nav a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold; }
+  header nav .side-nav a:hover {
+    background-color: #ffd600; }
+  header nav .side-nav a.close {
+    display: none; }
+  header nav i.fa {
+    position: absolute;
+    right: 10px;
+    margin: 8px 10px;
+    color: black;
+    font-size: 30px;
+    display: none; }
+
+* {
+  box-sizing: border-box;
+  /*quan trọng không thể thiếu. dùng để nối liền 2 thẻ*/ }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-14 {
+  width: 12%; }
+
+.col-15 {
+  width: 12.5%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-25 {
+  width: 20.83%; }
+
+.col-75 {
+  width: 79.17%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.33%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-115 {
+  width: 95.83%; }
+
+.col-105 {
+  width: 87.5%; }
+
+.col-12 {
+  width: 100%; }
+
+.col-35 {
+  width: 29.16%; }
+
+.col-45 {
+  width: 37.5%; }
+
+.col-275 {
+  width: 18.75%; }
+
+.col-50 {
+  width: 4.16%; }
+
+[class*="col-"] {
+  float: left;
+  padding: 15px; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block; }
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://static.ladipage.net/s1440x1000/uploads/images/72bbfcf5-9528-4b54-aaf9-b73caf278947.jpg");
+  background-size: cover;
+  padding-top: 5px;
+  padding-bottom: 200px; }
+  .header .head-banner {
+    padding-top: 30px;
+    margin-bottom: 15%;
+    color: #fff;
+    font-size: 20px; }
+    .header .head-banner i {
+      color: #FAB702; }
+      .header .head-banner i p {
+        display: inline-block;
+        padding-left: 5px;
+        color: #fff;
+        font-size: 16px; }
+    .header .head-banner img {
+      padding-top: 5px;
+      width: 40%; }
+  .header .banner {
+    text-align: center;
+    color: #fff; }
+    .header .banner i {
+      font-size: 40px;
+      padding-bottom: 15px; }
+    .header .banner p {
+      font-size: 20px;
+      word-spacing: 2px;
+      padding-bottom: 15px; }
+    .header .banner h1 {
+      font-size: 70px;
+      word-spacing: 2px;
+      padding-top: 15px;
+      padding-bottom: 20px;
+      font-weight: bold; }
+    .header .banner button {
+      margin-top: 20px;
+      border: none;
+      background-color: #ffff80;
+      font-family: 'Open Sans',sans-serif;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      color: #121212;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 2px;
+      width: 20%;
+      height: 50px; }
+      .header .banner button:hover {
+        transform: scale(1.1);
+        transition-delay: 0.4s;
+        transition: 1s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+        background: #ffa31a;
+        cursor: pointer; }
+    .header .banner .line {
+      border-top-width: 3px;
+      border-left-width: 0px;
+      border-right-width: 0px;
+      border-bottom-width: 0px;
+      border-style: solid;
+      border-color: white;
+      margin-top: 9.5px;
+      width: 30%;
+      margin-left: 35%;
+      padding-bottom: 15px; }
+
+.design {
+  background-color: rgba(255, 255, 255, 0);
+  padding-top: 50px;
+  padding-bottom: 80px; }
+  .design [class*="col-"] {
+    float: left;
+    padding: 5px; }
+  .design .name {
+    text-align: center;
+    padding-bottom: 20px; }
+    .design .name h1 {
+      font-size: 35px;
+      padding-bottom: 15px; }
+    .design .name p {
+      padding: 10px;
+      font-size: 22px;
+      padding-bottom: 15px;
+      color: #606060;
+      line-height: 25px; }
+  .design .point i {
+    padding-top: 5px;
+    font-size: 30px;
+    color: #FAB702; }
+  .design .point h2 {
+    font-size: 20px;
+    padding-bottom: 20px; }
+  .design .point p {
+    color: #616161;
+    font-size: 17px;
+    line-height: 30px; }
+
+.port {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://static.ladipage.net/uploads/images/6337a8e3-0c54-49c7-aef9-8ef79da7eca5.png);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: #fff; }
+  .port img {
+    padding-top: 70px;
+    width: 100%; }
+  .port h1 {
+    padding-top: 4px;
+    font-size: 40px;
+    color: #FAB702; }
+  .port p {
+    color: #fff;
+    padding-top: 20px;
+    font-size: 18px;
+    padding-bottom: 20px;
+    line-height: 30px; }
+  .port button {
+    border: none;
+    background-color: #ffff66;
+    font-family: 'Open Sans',sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #121212;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 1px;
+    width: 30%;
+    height: 40px; }
+    .port button:hover {
+      border-radius: 25%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+      background: #ffa31a;
+      cursor: pointer; }
+    .port button h6 {
+      color: black;
+      font-weight: bold; }
+
+.interioir {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  text-align: center; }
+  .interioir .name {
+    text-align: center; }
+    .interioir .name h1 {
+      font-size: 35px;
+      padding-bottom: 15px; }
+    .interioir .name p {
+      font-size: 20px;
+      padding-bottom: 10px;
+      color: #616161; }
+  .interioir .picture {
+    max-width: auto; }
+    .interioir .picture img {
+      width: 100%;
+      height: 200px; }
+      .interioir .picture img:hover {
+        transform: scale(1.1);
+        transition: 1s;
+        transition-delay: 0.4s; }
+
+.empty {
+  background-image: url("https://static.ladipage.net/s1440x1000/uploads/images/318d1f24-1354-4710-a8a1-3f4df5575a98.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 800px; }
+
+.customer {
+  padding-top: 50px;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding-bottom: 50px; }
+  .customer .cus-1 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 7px 7px 8px #ffad33; }
+  .customer .cus-2 p {
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #424242;
+    line-height: 25px; }
+  .customer .cus-2 h1 {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black; }
+  .customer .cus-2 h6 {
+    padding-top: 10px;
+    font-size: 17px;
+    color: #424242; }
+
+.card {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url("https://static.ladipage.net/s1440x600/uploads/images/ba9cd2ce-c6fd-46bf-ba68-8c8c1ece8827.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 50px; }
+  .card .cark-1 {
+    padding-top: 15px; }
+    .card .cark-1 .card-shadow {
+      padding-left: 10px;
+      padding-right: 10px; }
+      .card .cark-1 .card-shadow i {
+        padding-top: 20px;
+        color: #FAB702;
+        font-size: 40px;
+        padding-bottom: 15px; }
+      .card .cark-1 .card-shadow h2 {
+        font-size: 20px;
+        padding-bottom: 15px; }
+      .card .cark-1 .card-shadow p {
+        color: #424242;
+        font-size: 17px;
+        line-height: 25px;
+        padding-bottom: 25px; }
+      .card .cark-1 .card-shadow:hover {
+        background-color: #ffff66;
+        transform: scale(1.1);
+        transition: 1s;
+        transition-delay: 0.4s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+        cursor: pointer; }
+
+.staff {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center; }
+  .staff img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 1px 20px #ffad33; }
+  .staff h3 {
+    padding-top: 20px;
+    font-size: 15px;
+    color: #FAB702; }
+  .staff h2 {
+    padding-top: 10px;
+    font-size: 18px; }
+  .staff p {
+    padding-top: 10px;
+    font-size: 17px;
+    line-height: 22px;
+    color: #424242; }
+  .staff h1 {
+    font-size: 30px;
+    font-weight: bold; }
+  .staff h6 {
+    padding-top: 15px;
+    font-size: 20px;
+    padding-bottom: 25px; }
+
+.price-list {
+  background-color: #f7f7f7;
+  padding-top: 20px;
+  text-align: center;
+  padding: 50px;
+  padding-bottom: 80px; }
+  .price-list h1 {
+    font-size: 30px;
+    font-weight: bold; }
+  .price-list p {
+    padding-top: 15px;
+    font-size: 20px;
+    color: #616161;
+    line-height: 23px;
+    padding-bottom: 30px; }
+  .price-list .price-shadow {
+    padding: 20px;
+    border: 3px solid #D1CBC2; }
+    .price-list .price-shadow p {
+      padding-top: 10px;
+      font-size: 16px;
+      color: #616161;
+      line-height: 19px; }
+    .price-list .price-shadow hr {
+      color: #424242; }
+    .price-list .price-shadow h1 {
+      font-size: 40px;
+      font-weight: bold;
+      word-spacing: 10px;
+      color: #424242; }
+    .price-list .price-shadow h3 {
+      padding-top: 5px;
+      font-size: 20px;
+      color: #616161;
+      padding-bottom: 10px; }
+    .price-list .price-shadow:hover {
+      box-shadow: 10px 10px 10px 10px 0 black;
+      background-color: #ffd600;
+      transform: scale(1.09);
+      transition: 1s;
+      transition-delay: 0.4s;
+      border: 2px solid #fff; }
+  .price-list .col-3:hover {
+    background-color: #ffd600;
+    transition: 2s;
+    transition-delay: 0.5s; }
+  .price-list [class*="col-"] {
+    float: left;
+    padding: 20px; }
+
+.end {
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px; }
+  .end h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 50px; }
+  .end .endl {
+    max-width: 100%; }
+    .end .endl img {
+      width: 80%; }
+
+.footer {
+  padding-top: 20px;
+  background-color: #141414;
+  padding-bottom: 50px;
+  color: #fff; }
+  .footer .footer1 img {
+    width: 30%; }
+  .footer .footer1 h6 {
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 0.52);
+    font-size: 20px;
+    padding-bottom: 12px; }
+  .footer .footer1 p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.84); }
+  .footer .footer1 h3 {
+    padding-top: 15px;
+    font-size: 20px;
+    padding-bottom: 15px; }
+  .footer .footer1 input {
+    height: 40px;
+    width: 73%;
+    border: none;
+    padding-left: 10px; }
+  .footer .footer1 button {
+    height: 41.1px;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.29);
+    border: none;
+    font-size: 16px;
+    color: #fff; }
+    .footer .footer1 button:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+      background: #ffa31a;
+      cursor: pointer;
+      color: black;
+      font-weight: bold; }
+  .footer .footer1 .iconfooter {
+    padding-top: 20px; }
+    .footer .footer1 .iconfooter i {
+      font-size: 20px;
+      padding-right: 15px; }
+      .footer .footer1 .iconfooter i:hover {
+        transform: scale(1.5);
+        transition: 0.6s;
+        color: #ffa31a; }
+  .footer .line {
+    border-top-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.18);
+    margin-top: 9.5px;
+    margin-left: 13.5%;
+    margin-right: 12.5%;
+    padding-bottom: 15px; }
+  .footer .footer2 p {
+    color: white; }
+
+@media only screen and (max-width: 769px) {
+  * {
+    box-sizing: border-box;
+    /*quan trọng không thể thiếu. dùng để nối liền 2 thẻ*/ }
+
+  header {
+    /* kết thúc cho style của mobile-mod*/ }
+    header nav.mobile-mod {
+      text-align: center;
+      z-index: 1;
+      overflow: auto;
+      position: fixed;
+      left: 50%;
+      width: 50%;
+      height: 70%;
+      background: rgba(0, 0, 0, 0.7);
+      padding-left: 0px; }
+    header nav.mobile-mod .side-nav {
+      display: block; }
+    header nav.mobile-mod .side-nav a {
+      display: block;
+      color: #fff; }
+    header nav.mobile-mod .side-nav a.close {
+      font-weight: bold;
+      display: block; }
+    header nav.mobile-mod .side-nav a.close i {
+      position: relative;
+      display: inline-block;
+      color: #fff;
+      font-size: 20px; }
+    header nav.mobile-mod .side-nav a:hover {
+      background-color: #ffd600; }
+    header nav .side-nav {
+      height: 45px; }
+    header nav .side-nav a {
+      display: none; }
+    header nav i.fa {
+      display: block;
+      right: 0; }
+
+  .col-1 {
+    width: 8.33%; }
+
+  .col-14 {
+    width: 12%; }
+
+  .col-15 {
+    width: 12.5%; }
+
+  .col-2 {
+    width: 16.66%; }
+
+  .col-25 {
+    width: 20.83%; }
+
+  .col-75 {
+    width: 79.17%; }
+
+  .col-3 {
+    width: 25%; }
+
+  .col-4 {
+    width: 33.33%; }
+
+  .col-5 {
+    width: 41.66%; }
+
+  .col-6 {
+    width: 50%; }
+
+  .col-7 {
+    width: 58.33%; }
+
+  .col-8 {
+    width: 66.33%; }
+
+  .col-9 {
+    width: 75%; }
+
+  .col-10 {
+    width: 83.33%; }
+
+  .col-11 {
+    width: 91.66%; }
+
+  .col-12 {
+    width: 100%; }
+
+  .col-35 {
+    width: 18.75%; }
+
+  .col-45 {
+    width: 37.5%; }
+
+  .col-275 {
+    width: 18.75; }
+
+  [class*="col-"] {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center; }
+
+  .container {
+    width: 100%; }
+
+  .design .name p {
+    padding-left: 40px;
+    padding-right: 40px; }
+  .design .point i {
+    font-size: 40px; }
+  .design .point p {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 20px; }
+
+  .interioir [class*="col-"] {
+    float: left;
+    padding: 10px; }
+  .interioir p {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .interioir .picture img {
+    width: 70%; }
+
+  .port img {
+    width: 80%; }
+  .port p {
+    padding-left: 60px;
+    padding-right: 60px; }
+
+  .empty {
+    background-size: cover; }
+
+  .customer p {
+    margin-left: 23%;
+    margin-right: 23%; }
+
+  .card p {
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 30px; }
+  .card .cark-1 {
+    margin-left: 20%;
+    margin-right: 20%; }
+    .card .cark-1:hover {
+      padding-left: 0px;
+      padding-right: 0px; }
+
+  .staff h6 {
+    margin-left: 12%;
+    margin-right: 12%; }
+  .staff img {
+    width: 200px;
+    height: 200px; }
+  .staff p {
+    margin-left: 25%;
+    margin-right: 25%; }
+
+  .price-list {
+    padding-left: 10%;
+    padding-right: 10%; }
+    .price-list [class*="col-"] {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: center; }
+    .price-list .price-shadow {
+      margin-right: 20%;
+      margin-left: 20%; }
+      .price-list .price-shadow h1 {
+        font-size: 30px; }
+      .price-list .price-shadow h3 {
+        height: 20px; }
+      .price-list .price-shadow:hover {
+        box-shadow: 0px 0px 0px 0px 0 rgba(0, 0, 0, 0);
+        background-color: #f7f7f7;
+        transform: scale(1);
+        transition: 0s;
+        transition-delay: 0s;
+        border: 3px solid #D1CBC2; }
+    .price-list .col-3:hover {
+      background-color: #f7f7f7;
+      transition: 2s;
+      transition-delay: 0.5s; }
+
+  .end .endl img {
+    width: 50%;
+    height: 100px; } }
+@media only screen and (max-width: 500px) {
+  .header .banner button {
+    height: 60px;
+    width: 30%;
+    line-height: 20px; }
+
+  .design .point i {
+    font-size: 40px; }
+  .design .point p {
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-bottom: 20px; }
+
+  .customer p {
+    margin-left: 10%;
+    margin-right: 10%; }
+
+  .card p {
+    margin-left: 0%;
+    margin-right: 0%;
+    line-height: 30px; }
+
+  .staff h1 {
+    margin-left: 5%;
+    margin-right: 5%; }
+  .staff h6 {
+    margin-left: 12%;
+    margin-right: 12%; }
+  .staff img {
+    width: 200px;
+    height: 200px; }
+  .staff p {
+    margin-left: 15%;
+    margin-right: 15%; }
+
+  .price-list [class*="col-"] {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center; }
+  .price-list .price-shadow {
+    margin-right: 10%;
+    margin-left: 10%; }
+    .price-list .price-shadow h1 {
+      font-size: 25px; }
+    .price-list .price-shadow h3 {
+      height: 20px; }
+  .price-list .col-3:hover {
+    background-color: #f7f7f7; } }
+@media only screen and (max-width: 1171px) {
+  .design .point h2 {
+    height: 50px;
+    padding-left: 5px; }
+  .design .point p {
+    padding-left: 5px; }
+
+  .port h1 {
+    font-size: 35px; }
+  .port img {
+    padding-top: 60px; }
+  .port button {
+    width: 40%;
+    height: 50px; }
+
+  .customer .cus-2 p {
+    padding-left: 20px; }
+
+  .staff img {
+    width: 150px;
+    height: 150px; }
+
+  .price-list .price-shadow h1 {
+    font-size: 30px; }
+
+  .card .cark-1 .card-shadow h2 {
+    height: 50px; } }
+@media only screen and (max-width: 900px) {
+  .staff img {
+    width: 135px;
+    height: 135px; }
+
+  .price-list {
+    padding-left: 10%;
+    padding-right: 10%; }
+    .price-list [class*="col-"] {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: center; }
+    .price-list .price-shadow {
+      padding: 10px; }
+      .price-list .price-shadow h1 {
+        font-size: 40px; }
+    .price-list .col-3:hover {
+      background-color: #f7f7f7; } }
+
+/*# sourceMappingURL=demo.css.map */
